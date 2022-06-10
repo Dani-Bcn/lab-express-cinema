@@ -1,0 +1,12 @@
+<h1 class="h1show">Ironhack cinema</h1>
+<div class="container">    
+    {{#each movies}}
+        <div class="card">
+            <img src="{{image}}" alt="{{title}}">
+             <p>{{title}}</p>
+            <a href="/movies/{{this._id}}"><span>See more</span></a>  {{!-- le pasamos el id como ruta --}}
+        </div>
+     {{/each}}   
+</div>
+
+

@@ -1,8 +1,125 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+   background-color: #2b2d36;
+  }
+  .title{
+    width: 200px;
+    font-size: 120px;
+    color: rgb(8, 8, 8);
+    grid-column: 2;
+    grid-row:1;
+    margin:0 auto 0 100px;
+    color: wheat;   
+  }
+  .page1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/cinema.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .bt1{
+    width: 200px;
+    height: 100px;
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+    border-radius: 20px;  
+    margin-bottom:200px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+   color: rgb(245, 224, 179);
+    background: linear-gradient(#9ab6d7, #2b2d36);
+    border: none;
+    transition: 0.3s;   
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .bt1:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(255, 211, 175);
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    place-content: center;
+    align-items: center;
+    background-color: #2b2d36;
+  }
+  .card{
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#9ab6d7, #2b2d36);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+  }
+  .h1show{
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    text-shadow: 0 0 10px rgb(255, 236, 180);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+  }
+  img{
+    margin: auto;
+  }
+  p{
+   margin-top: 20px;
+   color: wheat;
+  }
+  h1{
+    color: rgb(255, 219, 153);
+    text-shadow: 0 0 10px rgb(255, 233, 177);
+  }
+  a{
+    color:#4993bb;
+    margin: 10px;
+    text-decoration: none;
+  }
+  h2{
+    color: rgb(252, 229, 185);
+    text-shadow: 0 0 10px rgb(254, 219, 166);
+    font-size: 60px;
+    margin: 30px 0 0 100px ;
+  }
+    .cardInfo{
+      width: 60%;
+      display: grid;
+      grid-column: repeat(2,1fr); 
+      grid-template-rows: repeat(1,1fr);
+  } 
+  .cardInfo > img{
+    height: 450px;
+    margin: 20px 0 0 100px;
+    box-shadow: 0 0 10px rgb(255, 233, 192);
+    border-radius: 10px;
+  }
+  .cardInfo > span{
+    padding: 10px;
+    grid-column: 2;
+    margin-left: 50px;
+  }
+  .times{
+    display: flex;
+    color: wheat;
+  }
+ 
 
-a {
-  color: #00B7FF;
-}
