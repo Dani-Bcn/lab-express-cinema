@@ -6,6 +6,13 @@
   body{
    background-color: #2b2d36;
   }
+  header{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   .title{
     width: 200px;
     font-size: 120px;
@@ -27,19 +34,18 @@
     background-size: 100% 100%;
   }
   .bt1{
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 50px;
     grid-column: 2;
     grid-row: 2;
-    margin: auto;
-    border-radius: 20px;  
-    margin-bottom:200px;
+    border-radius: 10px;  
+    margin: auto auto 250px auto;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-   color: rgb(245, 224, 179);
+    color: rgb(245, 224, 179);
     background: linear-gradient(#9ab6d7, #2b2d36);
     border: none;
     transition: 0.3s;   
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     font-weight: 700;
   }

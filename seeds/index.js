@@ -1,5 +1,5 @@
 const  mongoose  = require("mongoose");
-const Seeds =require("../models/Movies.model") //guadamos el modelo/Schema en Sedds
+const Seeds =require("../models/Movies.model") //guardamos el modelo/Schema en Sedds
 
 
 const seeds = [
@@ -89,7 +89,6 @@ mongoose
   .connect("mongodb://localhost/lab-express-cinema") // ruta en bd/index.js 
   .then((x) => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-
   })
   .then(()=>{
     return Seeds.create( seeds ) // Con Seeds.create => creamos y guadamos nuestro array "seeds" en la DB 
@@ -98,5 +97,5 @@ mongoose
     console.error("Error connecting to mongo: ", err);
   })
   .finally(()=>{
-    mongoose.connection.close// Cierra la conexion 
+    mongoose.connection.close()// Cierra la conexion 
   })
